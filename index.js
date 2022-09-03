@@ -11,8 +11,8 @@ function createEmployeeRecord(ary){
     }
 }
 
-function createEmployeeRecords(arys){
-    return arys.map(createEmployeeRecord)
+function createEmployeeRecords(arrays){
+    return arrays.map(createEmployeeRecord)
 }
 
 function createDSObj(getType, dateStamp) {
@@ -58,9 +58,6 @@ function findEmployeeByFirstName(srcArray, first_Name){
 }
 
 
-
-// ////////////////
-
         let rRecord = createEmployeeRecord(["Rafiki", "", "Aide", 10])
         let sRecord = createEmployeeRecord(["Simba", "", "King", 100])
 
@@ -89,4 +86,3 @@ function findEmployeeByFirstName(srcArray, first_Name){
         let employees = [sRecord, rRecord]
 
         calculatePayroll(employees) 
-        
